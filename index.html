@@ -3,118 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanak - Home</title>
+    <title>Sanak Safety Gear</title>
     <style>
-        /* Overall page styling */
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #111; /* Blackish background */
-            color: #f0f0f0; /* Light gray/white text for elevation */
-            line-height: 1.6;
-        }
-        
-        /* Header styling */
-        header {
-            background-color: #222; /* Slightly lighter black for contrast */
+            font-family: 'Arial', sans-serif;
             color: white;
-            padding: 1rem;
+            background-color: black;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            position: absolute;
+            width: 100%;
+            box-sizing: border-box;
+            z-index: 10;
+        }
+        .logo {
+            font-family: 'Brush Script MT', cursive; /* Or any script font */
+            font-size: 32px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .icons {
+            display: flex;
+            gap: 20px;
+            font-size: 20px;
+        }
+        .hero {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+            box-sizing: border-box;
+        }
+        .hero-image {
+            flex: 1;
             text-align: center;
-            border-bottom: 1px solid #444; /* Subtle border for elevation */
         }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        
-        /* Informative section styling */
-        .info-section {
-            padding: 2rem;
-            text-align: center;
-            background-color: #1a1a1a; /* Darker section for depth */
-            margin: 1rem;
-            border-radius: 8px;
-            border: 1px solid #333; /* Elevated border */
-        }
-        .info-section img {
+        .hero-image img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
-            margin-bottom: 1rem;
         }
-        .info-section p {
-            font-size: 1.1rem;
-            color: #e0e0e0; /* Slightly lighter for readability */
+        .hero-content {
+            flex: 1;
+            max-width: 500px;
         }
-        
-        /* Product list styling */
-        .product-list {
-            padding: 2rem;
-            background-color: #1a1a1a; /* Matching dark section */
-            margin: 1rem;
-            border-radius: 8px;
-            border: 1px solid #333;
+        .welcome {
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.8;
         }
-        .product-list h2 {
-            text-align: center;
-            color: white;
-            margin-bottom: 1rem;
+        h1 {
+            font-size: 48px;
+            margin: 10px 0;
+            line-height: 1.2;
         }
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-            gap: 1rem;
+        .hero-content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
         }
-        .product-card {
-            background-color: #222; /* Elevated card background */
-            padding: 1rem;
-            border-radius: 8px;
-            border: 1px solid #444;
-            text-align: center;
-            transition: transform 0.2s; /* Subtle hover effect for elevation */
-        }
-        .product-card:hover {
-            transform: translateY(-5px); /* Slight lift on hover */
-        }
-        .product-card img {
-            max-width: 100%;
-            height: 150px; /* Fixed height for consistency */
-            object-fit: cover;
-            border-radius: 4px;
-            margin-bottom: 0.5rem;
-        }
-        .product-card h3 {
-            color: #f0f0f0;
-            margin: 0.5rem 0;
-        }
-        .product-card p {
-            color: #ccc;
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 600px) {
-            .info-section, .product-list {
-                padding: 1rem;
-                margin: 0.5rem;
-            }
-            header h1 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <h1>Sanak</h1>
-    </header>
-    
-    <!-- Informative Section -->
-    <section class="info-section">
-        <!-- Replace 'placeholder-image.jpg' with your image URL or file path -->
-        <img src="https://via.placeholder.com/600x300?text=Your+Image+Here" alt="Informative Image">
-        <!-- Edit this text as needed -->
-        <p>This is an informative section. Add your text here to describe something about Sanak, your products, or any key information
-
+        .shop-btn {
+            background-color: #00f0ff;
+            color: black;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 
